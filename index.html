@@ -2,6 +2,7 @@
     <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="author" content="LunarPanda66951">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strona Główna</title>
 <link rel="shortcut icon" href="Panda2.jpg">
 <link rel="stylesheet" href="style.css">
@@ -9,9 +10,45 @@
     body {
         background: linear-gradient(to top, navy, purple);  background-repeat: no-repeat; min-height: 100vh; margin: 0;
     }
+
+    .czarny-pasek {
+    display: flex;       /* ustawia elementy w jednej linii */
+    gap: 5px;           /* odstęp między kwadratami */
+    background-color: black;
+    width: 100%;
+    height: 45px;
+}
+
+.czarny-pasek li {
+    list-style: none;    /* usuwa kropki */
+    width: 100%;
+    height: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.czarny-pasek a {
+    color: white;
+    text-decoration: none;
+}
 </style>
     </head>
     <body>
-
+<ul class="czarny-pasek">
+    <li><a href="">Projekty</a></li>
+    <li><a href="">Zdjęcia i Filmy</a></li>
+    <li><a href="">Kontakt</a></li>
+    <li><a href="">Archiwum</a></li>
+</ul>
+<div>
+    <center>
+    <img src="lunarpanda_baner.gif" alt="baner.gif" width="600" height="300" >>
+    </center>
+</div>
     </body>
 </html>

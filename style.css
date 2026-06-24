@@ -1,0 +1,99 @@
+    body { background: linear-gradient(to top, navy, purple);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+ }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.baner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.baner {
+    max-width: 60%;
+    height: auto;
+}
+
+.prawy-lewy-panel {
+    width: 20%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.gorny-pasek {
+    display: flex;
+    gap: 7px;
+    color: white;
+    background-color: black;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 6%;
+    padding: 0;
+}
+
+.gorny-pasek li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lewy-pasek {
+
+}
+
+/* pod telefon */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .baner-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .prawy-lewy-panel {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .baner {
+        max-width: 100%;
+    }
+
+    .gorny-pasek {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gorny-pasek li {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
